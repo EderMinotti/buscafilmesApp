@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./barranavegar.module.css";
 import { Logout } from "../Hooks/logout";
 

@@ -4,12 +4,11 @@ import styles from "./moviessearch.module.css";
 import { CardFilmes } from "../../components/CardFilmes";
 import { BarraNavegar } from "../../components/BarraNavegar";
 import { Typograph } from "../../components/Typograph";
-import { Button } from "../../components/Button";
 import { ContainerLoading } from "../../components/ContainerLoading";
 import { Loading } from "../../components/Loading";
 
 
-const API_KEY = import.meta.env.VITE_TMBD_API_KEY;
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 export const MoviesSearch = () => {
 

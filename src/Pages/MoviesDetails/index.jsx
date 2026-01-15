@@ -3,14 +3,13 @@ import styles from "./moviesdetails.module.css";
 import { BarraNavegar } from "../../components/BarraNavegar";
 import { MoviePoster } from "../../components/MoviePoster";
 import { InfoMovie } from "../../components/InfoMovie";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { Loading } from "../../components/Loading";
 import { ContainerLoading } from "../../components/ContainerLoading";
 import { InteractionMovie} from "../../components/Hooks/InteractionMovie";
-import { Button } from "../../components/Button";
 import { ButtonInteraction } from "../../components/ButtonInteraction";
 
-const API_KEY = import.meta.env.VITE_TMBD_API_KEY;
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 export const MoviesDetails = () => {
   const { id } = useParams();
