@@ -1,0 +1,19 @@
+.movies_details {
+  text-align: center;
+  min-height: 100vh;
+  padding-bottom: 80px; 
+}
+
+.movie_content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+}
+
+.container_buttons {
+  margin: 2rem 0;
+  display: flex;
+
+
+}

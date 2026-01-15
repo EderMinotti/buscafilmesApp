@@ -1,0 +1,9 @@
+.movie_poster {
+  display: flex;
+  justify-content: center;
+}
+
+.movie_poster img {
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px black;
+}

@@ -1,0 +1,11 @@
+.button {
+  margin: 0 auto;
+  padding: 0.5rem 4rem;
+  font-family: var(--fonte);
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  background-color: var(--cinza-azulado);
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}

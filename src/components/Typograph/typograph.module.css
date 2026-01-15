@@ -1,0 +1,10 @@
+.typograph {
+    font-family: var(--fonte);
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.typograph a {
+    color: whitesmoke;
+}

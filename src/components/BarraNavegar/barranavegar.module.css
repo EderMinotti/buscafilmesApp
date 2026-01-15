@@ -1,0 +1,11 @@
+.barra_navegar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cinza-claro);
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

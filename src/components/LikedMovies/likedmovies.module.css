@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.like {
+  font-family: var(--fonte);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--cinza-escuro);
+  background-color: var(--verde-fundo);
+  text-align: center;
+  width: 100vh;
+}
+
+@media screen and (min-width:700px) {
+  
+  .like {
+    width: 100vw;
+  }
+
+  .container {
+    justify-content: flex-start;
+  }
+
+}

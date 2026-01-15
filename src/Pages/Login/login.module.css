@@ -1,0 +1,37 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  background-image: linear-gradient(to top, var(--cinza-escuro), var(--cinza-medio) ) ;
+  border: 1px solid var(--cinza);
+  border-radius: 2rem;
+  overflow: hidden;
+
+}
+
+.titulo {
+  color: var(--cinza-azulado);
+  background-color: var(--cinza-escuro);
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  position: relative;
+  top: -25px;
+}
+
+.formInputs {
+  padding: 2rem; /* só os inputs têm padding */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link_cadastro {
+  color: var(--cinza-azulado);
+  text-decoration: none;
+}

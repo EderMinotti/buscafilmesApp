@@ -1,0 +1,59 @@
+.movieshome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.usuario {
+  width: 100vw;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.likes {
+  width: 90vw;
+  text-align: center;
+  background-color: var(--verde-fundo);
+  padding: 4rem 0;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px rgba(15, 15, 15, 0.562);
+  border-bottom: 6px solid #09774d;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 700; 
+}
+
+
+.later {
+  width: 90vw;
+  text-align: center;
+  background-color: var(--azul-fundo);
+  padding: 4rem 0;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px rgba(15, 15, 15, 0.562);
+  border-bottom: 6px solid #03add8;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.dislikes {
+  width: 90vw;
+  text-align: center;
+  background-color: var(--vermelho-fundo);
+  padding: 4rem 0;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px rgba(15, 15, 15, 0.562);
+  border-bottom: 6px solid #3d1417;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
