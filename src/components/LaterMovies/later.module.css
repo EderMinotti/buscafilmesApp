@@ -7,9 +7,9 @@
 .later {
   font-family: var(--fonte);
   font-size: 32px;
-  font-weight: 600;
-  color: var(--cinza-escuro);
-  background-color: var(--azul-fundo);
+  font-weight: 400;
+  color: var(--cinza-azulado);
+  background-color: var(--cinza-escuro);
   text-align: center;
   width: 100vh;
 }
@@ -22,6 +22,7 @@
 
   .container {
     justify-content: flex-start;
+    margin-left: 3rem;
   }
 
 }

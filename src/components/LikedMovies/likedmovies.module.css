@@ -7,21 +7,20 @@
 .like {
   font-family: var(--fonte);
   font-size: 32px;
-  font-weight: 600;
-  color: var(--cinza-escuro);
-  background-color: var(--verde-fundo);
+  font-weight: 400;
+  color: var(--cinza-azulado);
+  background-color: var(--cinza-escuro);
   text-align: center;
   width: 100vh;
 }
 
-@media screen and (min-width:700px) {
-  
+@media screen and (min-width: 700px) {
   .like {
     width: 100vw;
   }
 
   .container {
     justify-content: flex-start;
+    margin-left: 3rem;
   }
-
 }

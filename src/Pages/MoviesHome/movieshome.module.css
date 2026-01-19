@@ -7,53 +7,77 @@
   gap: 3rem;
 }
 
-.usuario {
-  width: 100vw;
-  text-align: center;
-  color: whitesmoke;
-  font-weight: 600;
-  font-size: 32px;
+.container_user {
+  position: fixed;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.likes {
-  width: 90vw;
-  text-align: center;
-  background-color: var(--verde-fundo);
-  padding: 4rem 0;
-  border-radius: 12px;
-  box-shadow: 5px 5px 5px rgba(15, 15, 15, 0.562);
-  border-bottom: 6px solid #09774d;
-  color: whitesmoke;
-  font-size: 24px;
-  font-weight: 700; 
+.icon_user {
+  font-size: 36px;
+  color: var(--cinza-claro);
+  background-color: #03add8;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.container_menu {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+} 
 
-.later {
+.background {
   width: 90vw;
   text-align: center;
-  background-color: var(--azul-fundo);
+  background-color: var(--cinza-medio);
   padding: 4rem 0;
   border-radius: 12px;
-  box-shadow: 5px 5px 5px rgba(15, 15, 15, 0.562);
-  border-bottom: 6px solid #03add8;
-  color: whitesmoke;
+  border: none;
+  opacity: 0.6;
+  color: var(--cinza-claro);
   font-size: 24px;
   font-weight: 700;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+@media screen and (min-width: 700px) {
+  .background {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.dislikes {
-  width: 90vw;
-  text-align: center;
-  background-color: var(--vermelho-fundo);
-  padding: 4rem 0;
-  border-radius: 12px;
-  box-shadow: 5px 5px 5px rgba(15, 15, 15, 0.562);
-  border-bottom: 6px solid #3d1417;
-  color: whitesmoke;
-  font-size: 24px;
-  font-weight: 700;
+  .background:hover {
+    transform: scale(1.08);
+    opacity: 0.5;
+    
+  }
+
+  .container_menu {
+    margin-top: 3rem;
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .icon_user {
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .container_user {
+    font-size: 36px;
+  }
 }
-
-
