@@ -1,7 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./barranavegar.module.css";
 import { Logout } from "../Hooks/logout";
-
+import { RiArrowGoBackFill } from "react-icons/ri";
+import { FiHome } from "react-icons/fi";
+import { CgLogOut } from "react-icons/cg";
+import { GrSearch } from "react-icons/gr";
 export const BarraNavegar = () => {
   const navigate = useNavigate()
 
@@ -11,22 +14,22 @@ export const BarraNavegar = () => {
     <ul className={styles.barra_navegar}>
       <Link to={"/auth/search"}>
         <li>
-          <img src="/icons/search.png" alt="" />
+          <GrSearch className={styles.icon_search} />
         </li>
       </Link>
       
     <Link to={"/auth/home"}>
       <li>
-        <img src="/icons/home.png" alt="" />
+        <FiHome className={styles.icon_home}/>
       </li>
     </Link>
 
     <li onClick={() => navigate(-1)}>
-      <img src="/icons/back.png" alt="" />
+      <RiArrowGoBackFill className={styles.icon_arrowback} />
     </li>
     <Link to={"/"}>
         <li onClick={Logout}>
-          <img src="/icons/logout.png" alt="" />
+          <CgLogOut className={styles.icon_logout}/>
         </li>
     </Link>
       

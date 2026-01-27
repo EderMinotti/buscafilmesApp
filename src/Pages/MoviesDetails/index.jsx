@@ -8,6 +8,8 @@ import { Loading } from "../../components/Loading";
 import { ContainerLoading } from "../../components/ContainerLoading";
 import { InteractionMovie} from "../../components/Hooks/InteractionMovie";
 import { ButtonInteraction } from "../../components/ButtonInteraction";
+import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
+import { MdOutlineWatchLater } from "react-icons/md";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -56,9 +58,9 @@ export const MoviesDetails = () => {
         <div className={styles.movie_content}>
           <MoviePoster pathImage={movie.poster_path} movieName={movie.title} />
           <div className={styles.container_buttons}>
-          <ButtonInteraction onClick={()=>InteractionMovie(infos,"like","GOSTEI")} caminho="/icons/like.png" id ={movie.id} chave="like"/>
-          <ButtonInteraction onClick={()=>InteractionMovie(infos,"dislike","NÃO GOSTEI")} caminho="/icons/dislike.png" id ={movie.id} chave="dislike"/>
-          <ButtonInteraction onClick={()=>InteractionMovie(infos,"later","VER MAIS TARDE")} caminho="/icons/later.png" id ={movie.id} chave="later"/>
+          <ButtonInteraction onClick={()=>InteractionMovie(infos,"like","GOSTEI")} tagIcon={<AiOutlineLike className={styles.icon_like}/>} id ={movie.id} chave="like"/>
+          <ButtonInteraction onClick={()=>InteractionMovie(infos,"dislike","NÃO GOSTEI")} tagIcon={<AiOutlineDislike className={styles.icon_dislike}/>} id ={movie.id} chave="dislike"/>
+          <ButtonInteraction onClick={()=>InteractionMovie(infos,"later","VER MAIS TARDE")} tagIcon={<MdOutlineWatchLater className={styles.icon_later}/>} id ={movie.id} chave="later"/>
         
           </div>
 

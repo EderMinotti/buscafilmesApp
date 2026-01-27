@@ -17,3 +17,9 @@
 
 
 }
+
+.icon_later, 
+.icon_like, 
+.icon_dislike {
+  font-size: 25px;
+}
