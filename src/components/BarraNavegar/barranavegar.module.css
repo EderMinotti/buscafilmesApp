@@ -11,6 +11,12 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.icon_home, .icon_arrowback, .icon_logout, .icon_search {
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+}
+
 @media screen and (min-width:700px) {
   .barra_navegar {
     flex-direction: column;
